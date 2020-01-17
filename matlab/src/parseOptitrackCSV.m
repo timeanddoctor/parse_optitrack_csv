@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % @file    parseOptitrackCSV.m
-% @brief   Parse exported csv file from Motive software.
+% @brief   Parse exported csv files from Motive software.
 % @author  Raul Tapia
 
 % @param   filename   Name of the csv file
