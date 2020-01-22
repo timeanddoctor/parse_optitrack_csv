@@ -19,7 +19,7 @@ function rigidBody = parseOptitrackCSV(filename)
     rigidBody.t               = data.data(:,2);
     rigidBody.quaternion      = data.data(:,3:6);
     rigidBody.position        = data.data(:,7:9);
-    rigidBody.meanMarkerError = data.data(:,7:10);
+    rigidBody.meanMarkerError = data.data(:,10);
 
     %%% Check number of markers
     numMarkers = char(data.textdata(3));
