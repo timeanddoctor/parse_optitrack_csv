@@ -18,5 +18,3 @@ import parseOptitrackCSV as optitrack
 if __name__ == '__main__':
     rigidBody = optitrack.RigidBody('test.csv')
     print(rigidBody.position)
-
-    print(rigidBody.marker)
