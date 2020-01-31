@@ -64,8 +64,9 @@ class RigidBody:
                 self.meanMarkerError.append(float(row["meanMarkerError"]))
 
                 ### Markers
+                self.marker.append([])
                 for k in range(int(len(row[None])/7)):
-                    self.marker.append(Marker(float(row[None][4*k]), float(row[None][4*k+1]), float(row[None][4*k+2]), float(row[None][4*k+3])))
+                    self.marker[-1].append(Marker(float(row[None][4*k]), float(row[None][4*k+1]), float(row[None][4*k+2]), float(row[None][4*k+3])))
 
         ### Close file
         file.close()
