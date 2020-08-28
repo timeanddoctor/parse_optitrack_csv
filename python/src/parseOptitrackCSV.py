@@ -53,17 +53,15 @@ class RigidBody:
 
             ### Check if error
             if row["rotationX"] == '':
-                self.quaternion.append('No value')
-                self.position.append('No value')
-                self.meanMarkerError.append('No value')
-                self.marker.append('No value')
-                self.framesWithError.append(self.time[-1])
+                self.quaternion.append('?')
+                self.position.append('?')
+                self.meanMarkerError.append('?')
+                self.marker.append('?')
+                self.framesWithError.append(self.frame[-1])
             else:
                 self.quaternion.append((float(row["rotationX"]),float(row["rotationY"]),float(row["rotationZ"]),float(row["rotationW"])))
                 self.position.append((float(row["positionX"]),float(row["positionY"]),float(row["positionZ"])))
                 self.meanMarkerError.append(float(row["meanMarkerError"]))
-
-                ### Markers
                 self.marker.append([])
                 for k in range(int(len(row[None])/7)):
                     self.marker[-1].append(Marker(float(row[None][4*k]), float(row[None][4*k+1]), float(row[None][4*k+2]), float(row[None][4*k+3])))
