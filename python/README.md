@@ -24,8 +24,5 @@ rigidBody = parseOptitrackCSV.RigidBody('file.csv')
 ## Test
 parseOptitrackCSV.py can be tested using:
 ```
-python test.py
-```
-```
 python3 test.py
 ```
